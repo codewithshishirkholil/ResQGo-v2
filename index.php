@@ -1,0 +1,73 @@
+<?php
+require_once 'includes/functions.php';
+start_session_if_not_started();
+
+// If user is already logged in, redirect to appropriate page
+if (is_logged_in()) {
+    redirect_by_user_type();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ResQGo - Emergency Ambulance Service</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>ResQGo</h1>
+        <p>Emergency at Your Fingertips</p>
+    </header>
+    
+    <div class="hero">
+        <h2>Fast, Reliable Emergency Medical Transport</h2>
+        <p>When every second counts, trust ResQGo to get you the help you need.</p>
+        
+        <div class="login-container">
+            <h3>Login</h3>
+            <?php if (isset($_SESSION['error'])): ?>
+                <div class="error-message"><?php echo $_SESSION['error']; unset($_SESSION['error']); ?></div>
+            <?php endif; ?>
+            <form action="process/login_process.php" method="post">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div class="signup-links">
+                <p>Don't have an account?</p>
+                <a href="customer/signup.php"><button class="secondary-button">Customer Sign Up</button></a>
+                <a href="driver/signup.php"><button class="secondary-button">Driver Sign Up</button></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="features">
+        <div class="feature">
+            <h3>Quick Response</h3>
+            <p>Our network of drivers ensures the fastest possible response time in emergencies.</p>
+        </div>
+        <div class="feature">
+            <h3>Trained Professionals</h3>
+            <p>All our drivers are certified in emergency medical response and transport.</p>
+        </div>
+        <div class="feature">
+            <h3>Transparent Pricing</h3>
+            <p>Know exactly what you're paying for with our clear fare structure.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 ResQGo. All rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>
