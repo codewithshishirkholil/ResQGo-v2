@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Details - ResQGo</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ResQGo</h1>
+            <p>Emergency at Your Fingertips</p>
+        </header>
+        
+        <nav>
+            <ul>
+                
+                <li><a href="ride-requests.html">Ride Requests</a></li>
+                <li><a href="active-rides.html">Active Rides</a></li>
+                <li><a href="ride-history.html">Ride History</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 20px;">My Profile</h2>
+            
+            <div style="text-align: center; margin-bottom: 20px;">
+                <div style="width: 100px; height: 100px; background-color: #ddd; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 36px; color: #666;">JS</span>
+                </div>
+                <p style="margin-top: 10px; font-weight: bold;">John Smith</p>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab">Personal Info</div>
+                <div class="tab active">Vehicle Details</div>
+                <div class="tab">Documents</div>
+            </div>
+            
+            <div class="tab-content">
+                <form action="profile.html">
+                    <div class="form-group">
+                        <label for="vehicle-type">Vehicle Type</label>
+                        <select id="vehicle-type" name="vehicle-type" required>
+                            <option value="basic" selected>Basic Ambulance</option>
+                            <option value="advanced">Advanced Life Support</option>
+                            <option value="neonatal">Neonatal Ambulance</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="vehicle-make">Vehicle Make</label>
+                        <input type="text" id="vehicle-make" name="vehicle-make" value="Toyota" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="vehicle-model">Vehicle Model</label>
+                        <input type="text" id="vehicle-model" name="vehicle-model" value="HiAce" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="vehicle-year">Vehicle Year</label>
+                        <input type="text" id="vehicle-year" name="vehicle-year" value="2023" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="vehicle-color">Vehicle Color</label>
+                        <input type="text" id="vehicle-color" name="vehicle-color" value="White" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="license-plate">License Plate Number</label>
+                        <input type="text" id="license-plate" name="license-plate" value="AMB-1234" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registration">Registration Number</label>
+                        <input type="text" id="registration" name="registration" value="REG987654321" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="insurance">Insurance Policy Number</label>
+                        <input type="text" id="insurance" name="insurance" value="INS123456789" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="equipment">Available Equipment</label>
+                        <input type="text" id="equipment" name="equipment" value="Oxygen, First Aid, Stretcher, Defibrillator" required>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button type="submit" class="secondary-button">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="ride-requests.html"><button class="secondary-button">Back to Dashboard</button></a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 ResQGo. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

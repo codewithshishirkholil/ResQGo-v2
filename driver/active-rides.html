@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Rides - ResQGo</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ResQGo</h1>
+            <p>Emergency at Your Fingertips</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="ride-requests.html">Ride Requests</a></li>
+                <li><a href="active-rides.html">Active Rides</a></li>
+                <li><a href="ride-history.html">Ride History</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <div>
+            <h2 style="margin-bottom: 20px;">Active Rides</h2>
+            
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h3>Emergency: Cardiac</h3>
+                        <p><strong>Pickup:</strong> 123 Main St, Cityville</p>
+                        <p><strong>Destination:</strong> City General Hospital (3.5 miles)</p>
+                        <p><strong>Customer:</strong> John Doe</p>
+                        <p><strong>Status:</strong> <span class="status status-accepted">En Route to Pickup</span></p>
+                        <p><strong>Fare:</strong> $50</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <button class="secondary-button">Call Customer</button>
+                        <div style="margin-top: 10px;">
+                            <button>Arrived at Pickup</button>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <button>Complete Ride</button>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <button style="background-color: #f44336;">Cancel Ride</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="ride-requests.html"><button class="secondary-button">View New Requests</button></a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 ResQGo. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

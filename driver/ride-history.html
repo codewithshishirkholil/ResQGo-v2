@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride History - ResQGo</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ResQGo</h1>
+            <p>Emergency at Your Fingertips</p>
+        </header>
+        
+        <nav>
+            <ul>
+                
+                <li><a href="ride-requests.html">Ride Requests</a></li>
+                <li><a href="active-rides.html">Active Rides</a></li>
+                <li><a href="ride-history.html">Ride History</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <div>
+            <h2 style="margin-bottom: 20px;">Your Ride History</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Pickup</th>
+                        <th>Destination</th>
+                        <th>Customer</th>
+                        <th>Emergency Type</th>
+                        <th>Fare</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apr 9, 2025</td>
+                        <td>123 Main St, Cityville</td>
+                        <td>City General Hospital</td>
+                        <td>John Doe</td>
+                        <td>Cardiac</td>
+                        <td>$50</td>
+                        <td><span class="status status-completed">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>Apr 7, 2025</td>
+                        <td>456 Oak Ave, Cityville</td>
+                        <td>Memorial Hospital</td>
+                        <td>Jane Smith</td>
+                        <td>Accident</td>
+                        <td>$65</td>
+                        <td><span class="status status-completed">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>Apr 5, 2025</td>
+                        <td>789 Pine St, Cityville</td>
+                        <td>St. Mary's Hospital</td>
+                        <td>Robert Johnson</td>
+                        <td>Other Medical</td>
+                        <td>$45</td>
+                        <td><span class="status status-completed">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>Apr 3, 2025</td>
+                        <td>321 Elm St, Cityville</td>
+                        <td>Children's Hospital</td>
+                        <td>Sarah Williams</td>
+                        <td>Pregnancy</td>
+                        <td>$55</td>
+                        <td><span class="status status-rejected">Cancelled</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="ride-requests.html"><button class="secondary-button">View New Requests</button></a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 ResQGo. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

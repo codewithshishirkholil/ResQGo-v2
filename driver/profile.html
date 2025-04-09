@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - ResQGo</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ResQGo</h1>
+            <p>Emergency at Your Fingertips</p>
+        </header>
+        
+        <nav>
+            <ul>
+                
+                <li><a href="ride-requests.html">Ride Requests</a></li>
+                <li><a href="active-rides.html">Active Rides</a></li>
+                <li><a href="ride-history.html">Ride History</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 20px;">My Profile</h2>
+            
+            <div style="text-align: center; margin-bottom: 20px;">
+                <div style="width: 100px; height: 100px; background-color: #ddd; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 36px; color: #666;">JS</span>
+                </div>
+                <p style="margin-top: 10px; font-weight: bold;">John Smith</p>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab active">Personal Info</div>
+                <div class="tab">Vehicle Details</div>
+                <div class="tab">Documents</div>
+            </div>
+            
+            <div class="tab-content">
+                <form action="profile.html">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" value="John Smith" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="john.smith@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone" value="(555) 123-4567" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Home Address</label>
+                        <input type="text" id="address" name="address" value="456 Oak Ave, Cityville">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="emergency-contact">Emergency Contact</label>
+                        <input type="text" id="emergency-contact" name="emergency-contact" value="Sarah Smith - (555) 987-6543">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="driver-license">Driver's License Number</label>
+                        <input type="text" id="driver-license" name="driver-license" value="DL12345678">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">Years of Experience</label>
+                        <input type="text" id="experience" name="experience" value="5">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">New Password</label>
+                        <input type="password" id="password" name="password" placeholder="Leave blank to keep current password">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm New Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Leave blank to keep current password">
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button type="submit" class="secondary-button">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="ride-requests.html"><button class="secondary-button">Back to Dashboard</button></a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 ResQGo. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

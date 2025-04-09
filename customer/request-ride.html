@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Ride - ResQGo</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ResQGo</h1>
+            <p>Emergency at Your Fingertips</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="request-ride.html">Request Ride</a></li>
+                <li><a href="ride-history.html">Ride History</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 20px;">Request Ambulance</h2>
+            
+            <form action="fare-selection.html">
+                <div class="form-group">
+                    <label for="pickup">Pickup Location</label>
+                    <input type="text" id="pickup" name="pickup" placeholder="Enter pickup address" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dropoff">Drop Location</label>
+                    <input type="text" id="dropoff" name="dropoff" placeholder="Enter hospital or destination" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="emergency-type">Emergency Type</label>
+                    <select id="emergency-type" name="emergency-type" required>
+                        <option value="">Select emergency type</option>
+                        <option value="accident">Accident</option>
+                        <option value="cardiac">Cardiac Emergency</option>
+                        <option value="pregnancy">Pregnancy</option>
+                        <option value="other">Other Medical Emergency</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <input type="text" id="notes" name="notes" placeholder="Any special requirements or information">
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <button type="submit">Find Ambulances</button>
+                </div>
+            </form>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 ResQGo. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

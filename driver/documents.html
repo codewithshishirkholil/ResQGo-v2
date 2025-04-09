@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents - ResQGo</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ResQGo</h1>
+            <p>Emergency at Your Fingertips</p>
+        </header>
+        
+        <nav>
+            <ul>
+               
+                <li><a href="ride-requests.html">Ride Requests</a></li>
+                <li><a href="active-rides.html">Active Rides</a></li>
+                <li><a href="ride-history.html">Ride History</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 20px;">My Profile</h2>
+            
+            <div style="text-align: center; margin-bottom: 20px;">
+                <div style="width: 100px; height: 100px; background-color: #ddd; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 36px; color: #666;">JS</span>
+                </div>
+                <p style="margin-top: 10px; font-weight: bold;">John Smith</p>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab">Personal Info</div>
+                <div class="tab">Vehicle Details</div>
+                <div class="tab active">Documents</div>
+            </div>
+            
+            <div class="tab-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Document Type</th>
+                            <th>Status</th>
+                            <th>Expiry Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Driver's License</td>
+                            <td><span class="status status-accepted">Verified</span></td>
+                            <td>Dec 31, 2027</td>
+                            <td><button class="secondary-button">Update</button></td>
+                        </tr>
+                        <tr>
+                            <td>Vehicle Registration</td>
+                            <td><span class="status status-accepted">Verified</span></td>
+                            <td>Jun 15, 2026</td>
+                            <td><button class="secondary-button">Update</button></td>
+                        </tr>
+                        <tr>
+                            <td>Insurance Certificate</td>
+                            <td><span class="status status-accepted">Verified</span></td>
+                            <td>Aug 22, 2025</td>
+                            <td><button class="secondary-button">Update</button></td>
+                        </tr>
+                        <tr>
+                            <td>Medical License</td>
+                            <td><span class="status status-accepted">Verified</span></td>
+                            <td>Mar 10, 2026</td>
+                            <td><button class="secondary-button">Update</button></td>
+                        </tr>
+                        <tr>
+                            <td>Background Check</td>
+                            <td><span class="status status-accepted">Verified</span></td>
+                            <td>N/A</td>
+                            <td><button class="secondary-button">View</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div style="margin-top: 20px;">
+                    <h3>Upload New Document</h3>
+                    <div class="form-group">
+                        <label for="document-type">Document Type</label>
+                        <select id="document-type" name="document-type" required>
+                            <option value="">Select document type</option>
+                            <option value="license">Driver's License</option>
+                            <option value="registration">Vehicle Registration</option>
+                            <option value="insurance">Insurance Certificate</option>
+                            <option value="medical">Medical License</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="document-file">Select File</label>
+                        <input type="file" id="document-file" name="document-file">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date (if applicable)</label>
+                        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/DD/YYYY">
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button type="submit" class="secondary-button">Upload Document</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="ride-requests.html"><button class="secondary-button">Back to Dashboard</button></a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 ResQGo. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

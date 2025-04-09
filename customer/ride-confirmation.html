@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Confirmation - ResQGo</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ResQGo</h1>
+            <p>Emergency at Your Fingertips</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="request-ride.html">Request Ride</a></li>
+                <li><a href="ride-history.html">Ride History</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <div style="max-width: 600px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h2>Ride Confirmed!</h2>
+                <p>Your ambulance is on the way.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Ride Details</h3>
+                <p><strong>Pickup:</strong> 123 Main St, Cityville</p>
+                <p><strong>Destination:</strong> City General Hospital</p>
+                <p><strong>Emergency Type:</strong> Cardiac Emergency</p>
+                <p><strong>Fare:</strong> $50</p>
+            </div>
+            
+            <div class="card">
+                <h3>Driver Information</h3>
+                <div style="display: flex; align-items: center;">
+                    <div style="width: 80px; height: 80px; background-color: #ddd; border-radius: 50%; margin-right: 20px; display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 24px; color: #666;">JS</span>
+                    </div>
+                    <div>
+                        <p><strong>Name:</strong> John Smith</p>
+                        <p><strong>Phone:</strong> (555) 123-4567</p>
+                        <p><strong>Vehicle:</strong> Basic Ambulance (White Toyota)</p>
+                        <p><strong>License Plate:</strong> AMB-1234</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>ETA</h3>
+                <div style="text-align: center;">
+                    <p style="font-size: 24px; font-weight: bold;">5 minutes</p>
+                    <p>Driver is en route to your location</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <button>Call Driver</button>
+                <a href="ride-history.html"><button class="secondary-button" style="margin-left: 10px;">View All Rides</button></a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 ResQGo. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

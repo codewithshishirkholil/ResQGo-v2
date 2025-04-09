@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fare Selection - ResQGo</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ResQGo</h1>
+            <p>Emergency at Your Fingertips</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="request-ride.html">Request Ride</a></li>
+                <li><a href="ride-history.html">Ride History</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <div>
+            <h2 style="margin-bottom: 20px;">Select Ambulance</h2>
+            
+            <div class="card">
+                <h3>Ride Details</h3>
+                <p><strong>Pickup:</strong> 123 Main St, Cityville</p>
+                <p><strong>Destination:</strong> City General Hospital</p>
+                <p><strong>Emergency Type:</strong> Cardiac Emergency</p>
+            </div>
+            
+            <h3>Available Ambulances</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Driver</th>
+                        <th>Vehicle Type</th>
+                        <th>Distance</th>
+                        <th>ETA</th>
+                        <th>Fare</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>Basic Ambulance</td>
+                        <td>2.5 km</td>
+                        <td>5 mins</td>
+                        <td>$50</td>
+                        <td><a href="ride-confirmation.html"><button>Select</button></a></td>
+                    </tr>
+                    <tr>
+                        <td>Sarah Johnson</td>
+                        <td>Advanced Life Support</td>
+                        <td>3.2 km</td>
+                        <td>7 mins</td>
+                        <td>$75</td>
+                        <td><a href="ride-confirmation.html"><button>Select</button></a></td>
+                    </tr>
+                    <tr>
+                        <td>Mike Davis</td>
+                        <td>Basic Ambulance</td>
+                        <td>4.0 km</td>
+                        <td>9 mins</td>
+                        <td>$45</td>
+                        <td><a href="ride-confirmation.html"><button>Select</button></a></td>
+                    </tr>
+                    <tr>
+                        <td>Lisa Wilson</td>
+                        <td>Advanced Life Support</td>
+                        <td>5.1 km</td>
+                        <td>12 mins</td>
+                        <td>$65</td>
+                        <td><a href="ride-confirmation.html"><button>Select</button></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="request-ride.html"><button class="secondary-button">Back to Request</button></a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 ResQGo. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

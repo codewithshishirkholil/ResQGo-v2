@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Updates - ResQGo</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ResQGo</h1>
+            <p>Emergency at Your Fingertips</p>
+        </header>
+        
+        <nav>
+            <ul>
+                
+                <li><a href="ride-requests.html">Ride Requests</a></li>
+                <li><a href="active-rides.html">Active Rides</a></li>
+                <li><a href="ride-history.html">Ride History</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <div>
+            <h2 style="margin-bottom: 20px;">Your Rides</h2>
+            
+            <div class="tabs">
+                <div class="tab">New Requests</div>
+                <div class="tab active">Active Rides</div>
+                <div class="tab">Completed</div>
+            </div>
+            
+            <div class="tab-content">
+                <div class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <h3>Emergency: Cardiac</h3>
+                            <p><strong>Pickup:</strong> 123 Main St, Cityville</p>
+                            <p><strong>Destination:</strong> City General Hospital (3.5 miles)</p>
+                            <p><strong>Customer:</strong> John Doe</p>
+                            <p><strong>Status:</strong> <span class="status status-accepted">Accepted</span></p>
+                            <p><strong>Fare:</strong> $50</p>
+                        </div>
+                        <div style="text-align: right;">
+                            <button class="secondary-button">Call Customer</button>
+                            <div style="margin-top: 10px;">
+                                <button>Arrived at Pickup</button>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <button>Complete Ride</button>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <button style="background-color: #f44336;">Cancel Ride</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <h3>Emergency: Accident</h3>
+                            <p><strong>Pickup:</strong> 456 Oak Ave, Cityville</p>
+                            <p><strong>Destination:</strong> Memorial Hospital (5.2 miles)</p>
+                            <p><strong>Customer:</strong> Jane Smith</p>
+                            <p><strong>Status:</strong> <span class="status status-pending">Pending</span></p>
+                            <p><strong>Fare:</strong> $65</p>
+                        </div>
+                        <div style="text-align: right;">
+                            <p>Waiting for customer confirmation...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 ResQGo. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
